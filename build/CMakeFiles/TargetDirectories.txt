@@ -1,0 +1,4 @@
+C:/vscode-workplace/c/opengl/build/CMakeFiles/opengl_demo.dir
+C:/vscode-workplace/c/opengl/build/CMakeFiles/ALL_BUILD.dir
+C:/vscode-workplace/c/opengl/build/CMakeFiles/ZERO_CHECK.dir
+C:/vscode-workplace/c/opengl/build/tools/CMakeFiles/ShaderLib.dir

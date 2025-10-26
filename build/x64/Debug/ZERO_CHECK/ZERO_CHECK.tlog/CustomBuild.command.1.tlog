@@ -1,0 +1,10 @@
+^C:\VSCODE-WORKPLACE\C\OPENGL\BUILD\CMAKEFILES\ED51FC692AC04DAB2156339822437B51\GENERATE.STAMP.RULE
+setlocal
+C:\cmake-4.1.0-windows-x86_64\cmake-4.1.0-windows-x86_64\bin\cmake.exe -SC:/vscode-workplace/c/opengl -BC:/vscode-workplace/c/opengl/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/vscode-workplace/c/opengl/build/opengl_demo.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
