@@ -59,9 +59,9 @@ int main(){
     //顶点数据
     float vertices[] = {
        // 位置              // 颜色
-     0.5f, -0.5f, 0.0f,  1.0f, 0.0f, 0.0f,   // 右下
-    -0.5f, -0.5f, 0.0f,  0.0f, 1.0f, 0.0f,   // 左下
-     0.0f,  0.5f, 0.0f,  0.0f, 0.0f, 1.0f    // 顶部
+     -0.5f, 0.5f, 0.0f,  1.0f, 0.0f, 0.0f,   // 右下
+    0.5f, 0.5f, 0.0f,  0.0f, 1.0f, 0.0f,   // 左下
+     0.0f,  -0.5f, 0.0f,  0.0f, 0.0f, 1.0f    // 顶部
 };
 
     float vertices2[] = {
@@ -99,6 +99,7 @@ int main(){
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
+        // shader.setFloat("offsetx", -0.5f);
         //使用着色器程序
         shader.use();
         //绘制图形
