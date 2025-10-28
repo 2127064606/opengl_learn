@@ -86,7 +86,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\glad\include;C:\vscode-workplace\c\opengl\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\glad\include;C:\glm-0.9.8.5\glm;C:\vscode-workplace\c\opengl\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -110,10 +110,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\glad\include;C:\vscode-workplace\c\opengl\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\glad\include;C:\glm-0.9.8.5\glm;C:\vscode-workplace\c\opengl\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\glad\include;C:\vscode-workplace\c\opengl\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\glad\include;C:\glm-0.9.8.5\glm;C:\vscode-workplace\c\opengl\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -121,7 +121,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>glfw3.lib;tools\Debug\ShaderLib.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>glfw3.lib;tools\Debug\ToolLib.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>C:/glfw-3.4.bin.WIN64/glfw-3.4.bin.WIN64/lib-vc2022;C:/glfw-3.4.bin.WIN64/glfw-3.4.bin.WIN64/lib-vc2022/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
@@ -140,7 +140,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\glad\include;C:\vscode-workplace\c\opengl\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\glad\include;C:\glm-0.9.8.5\glm;C:\vscode-workplace\c\opengl\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -165,10 +165,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\glad\include;C:\vscode-workplace\c\opengl\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\glad\include;C:\glm-0.9.8.5\glm;C:\vscode-workplace\c\opengl\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\glad\include;C:\vscode-workplace\c\opengl\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\glad\include;C:\glm-0.9.8.5\glm;C:\vscode-workplace\c\opengl\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -176,7 +176,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>glfw3.lib;tools\Release\ShaderLib.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>glfw3.lib;tools\Release\ToolLib.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>C:/glfw-3.4.bin.WIN64/glfw-3.4.bin.WIN64/lib-vc2022;C:/glfw-3.4.bin.WIN64/glfw-3.4.bin.WIN64/lib-vc2022/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
@@ -195,7 +195,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\glad\include;C:\vscode-workplace\c\opengl\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\glad\include;C:\glm-0.9.8.5\glm;C:\vscode-workplace\c\opengl\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -220,10 +220,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\glad\include;C:\vscode-workplace\c\opengl\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\glad\include;C:\glm-0.9.8.5\glm;C:\vscode-workplace\c\opengl\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\glad\include;C:\vscode-workplace\c\opengl\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\glad\include;C:\glm-0.9.8.5\glm;C:\vscode-workplace\c\opengl\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -231,7 +231,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>glfw3.lib;tools\MinSizeRel\ShaderLib.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>glfw3.lib;tools\MinSizeRel\ToolLib.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>C:/glfw-3.4.bin.WIN64/glfw-3.4.bin.WIN64/lib-vc2022;C:/glfw-3.4.bin.WIN64/glfw-3.4.bin.WIN64/lib-vc2022/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
@@ -250,7 +250,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\glad\include;C:\vscode-workplace\c\opengl\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\glad\include;C:\glm-0.9.8.5\glm;C:\vscode-workplace\c\opengl\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -274,10 +274,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\glad\include;C:\vscode-workplace\c\opengl\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\glad\include;C:\glm-0.9.8.5\glm;C:\vscode-workplace\c\opengl\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\glad\include;C:\vscode-workplace\c\opengl\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\glad\include;C:\glm-0.9.8.5\glm;C:\vscode-workplace\c\opengl\tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -285,7 +285,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>glfw3.lib;tools\RelWithDebInfo\ShaderLib.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>glfw3.lib;tools\RelWithDebInfo\ToolLib.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>C:/glfw-3.4.bin.WIN64/glfw-3.4.bin.WIN64/lib-vc2022;C:/glfw-3.4.bin.WIN64/glfw-3.4.bin.WIN64/lib-vc2022/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
@@ -371,9 +371,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\vscode-workplace\c\opengl\build\tools\ShaderLib.vcxproj">
-      <Project>{8B79C140-7F20-3148-A8B3-AB534E3636FC}</Project>
-      <Name>ShaderLib</Name>
+    <ProjectReference Include="C:\vscode-workplace\c\opengl\build\tools\ToolLib.vcxproj">
+      <Project>{A0713C65-111B-3AB0-A0C0-2A86A35AD035}</Project>
+      <Name>ToolLib</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

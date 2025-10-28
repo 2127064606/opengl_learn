@@ -9,6 +9,7 @@ set(GLAD_SRC C:/glad/src/)
 # GLFW头文件路径（指向包含GLFW目录的上级）
 include_directories("C:/glfw-3.4.bin.WIN64/glfw-3.4.bin.WIN64/include")
 include_directories("C:/glad/include")
+include_directories("C:/glm-0.9.8.5/glm")
 # GLFW库文件路径（指向存放.lib或.a的目录，根据实际子目录调整）
 # 例如：如果库在C:\glfw-3.4\glfw-3.4\lib-mingw-w64，则改为下面的路径
 link_directories("C:/glfw-3.4.bin.WIN64/glfw-3.4.bin.WIN64/lib-vc2022")  # 替换为你的库目录
@@ -27,7 +28,7 @@ add_executable(${PROJECT_NAME} main.cpp ${GLAD_SRC}/glad.c)  # 若有GLAD源码�
 # -------------------------- 链接库 --------------------------
 target_link_libraries(${PROJECT_NAME} PRIVATE
   glfw3  # 链接GLFW库（根据库文件名称调整，如libglfw3.a则写glfw3）
-  ShaderLib  # 链接Shader库
+  ToolLib  # 链接Tool库
 )
 
 # 链接系统OpenGL库（Windows默认是opengl32.lib）
