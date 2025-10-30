@@ -8,6 +8,12 @@
       <FullPath>C:\vscode-workplace\c\opengl\build\Debug\opengl_demo.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
+      <FullPath>C:\vscode-workplace\c\opengl\build\test\Debug\test_main.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\vscode-workplace\c\opengl\build\test\Debug\test_sun.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
       <FullPath>C:\vscode-workplace\c\opengl\build\x64\Debug\ALL_BUILD</FullPath>
     </ProjectOutput>
   </ProjectOutputs>

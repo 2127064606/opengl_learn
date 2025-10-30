@@ -182,6 +182,14 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{CA587E6F-164D-3B29-AE65-EAA48A32DC2A}</Project>
       <Name>opengl_demo</Name>
     </ProjectReference>
+    <ProjectReference Include="C:\vscode-workplace\c\opengl\build\test\test_main.vcxproj">
+      <Project>{BCFE151F-D367-339C-A610-C8865A5D5D63}</Project>
+      <Name>test_main</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vscode-workplace\c\opengl\build\test\test_sun.vcxproj">
+      <Project>{5CCE82BD-7E6C-349D-B4FE-E45D6A13ED59}</Project>
+      <Name>test_sun</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

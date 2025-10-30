@@ -14,6 +14,8 @@ include_directories("C:/glm-0.9.8.5/glm")
 # 例如：如果库在C:\glfw-3.4\glfw-3.4\lib-mingw-w64，则改为下面的路径
 link_directories("C:/glfw-3.4.bin.WIN64/glfw-3.4.bin.WIN64/lib-vc2022")  # 替换为你的库目录
 add_subdirectory(tools)
+enable_testing(test)
+add_subdirectory(test)
 # -------------------------- 其他库置（如GLAD、GLM） --------------------------
 # 如果GLAD也是手动放置的，类似指定路径（例如GLAD放在项目的vendor目录下）
 # include_directories("vendor/glad/include")  # 假设GLAD头文件路径

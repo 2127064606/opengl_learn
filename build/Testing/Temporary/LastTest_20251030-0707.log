@@ -1,0 +1,24 @@
+Start testing: Oct 30 21:55 中国标准时间
+----------------------------------------------------------
+2/2 Testing: test_sun
+2/2 Test: test_sun
+Command: "C:/vscode-workplace/c/opengl/build/test/Debug/test_sun.exe"
+Directory: C:/vscode-workplace/c/opengl/build/test
+"test_sun" start time: Oct 30 21:55 中国标准时间
+Output:
+----------------------------------------------------------
+VERTEX SHADER COMPILE SUCCESS
+FRAGMENT SHADER COMPILE SUCCESS
+SHADER PROGRAM LINK SUCCESS
+VERTEX SHADER COMPILE SUCCESS
+FRAGMENT SHADER COMPILE SUCCESS
+SHADER PROGRAM LINK SUCCESS
+<end of output>
+Test time =   6.20 sec
+----------------------------------------------------------
+Test Passed.
+"test_sun" end time: Oct 30 21:55 中国标准时间
+"test_sun" time elapsed: 00:00:06
+----------------------------------------------------------
+
+End testing: Oct 30 21:55 中国标准时间

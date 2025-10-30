@@ -1,4 +1,9 @@
 C:/vscode-workplace/c/opengl/build/CMakeFiles/opengl_demo.dir
+C:/vscode-workplace/c/opengl/build/CMakeFiles/RUN_TESTS.dir
 C:/vscode-workplace/c/opengl/build/CMakeFiles/ALL_BUILD.dir
 C:/vscode-workplace/c/opengl/build/CMakeFiles/ZERO_CHECK.dir
 C:/vscode-workplace/c/opengl/build/tools/CMakeFiles/ToolLib.dir
+C:/vscode-workplace/c/opengl/build/tools/CMakeFiles/RUN_TESTS.dir
+C:/vscode-workplace/c/opengl/build/test/CMakeFiles/test_main.dir
+C:/vscode-workplace/c/opengl/build/test/CMakeFiles/test_sun.dir
+C:/vscode-workplace/c/opengl/build/test/CMakeFiles/RUN_TESTS.dir
