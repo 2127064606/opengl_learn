@@ -298,6 +298,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   <ItemGroup>
     <ClInclude Include="C:\vscode-workplace\c\opengl\tools\Shader.hpp" />
     <ClCompile Include="C:\vscode-workplace\c\opengl\tools\Shader.cpp" />
+    <ClInclude Include="C:\vscode-workplace\c\opengl\tools\Camera.hpp" />
+    <ClCompile Include="C:\vscode-workplace\c\opengl\tools\Camera.cpp" />
     <ClInclude Include="C:\vscode-workplace\c\opengl\tools\stb_image.h" />
     <ClCompile Include="C:\vscode-workplace\c\opengl\tools\stb_image.cpp" />
   </ItemGroup>

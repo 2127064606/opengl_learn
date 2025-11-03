@@ -2,6 +2,8 @@ add_library(
     ToolLib
     Shader.hpp
     Shader.cpp
+    Camera.hpp
+    Camera.cpp
     stb_image.h
     stb_image.cpp
 )

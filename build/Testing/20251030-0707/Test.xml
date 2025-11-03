@@ -25,8 +25,8 @@
 	ProcessorClockFrequency="2400"
 	>
 	<Testing>
-		<StartDateTime>Oct 30 21:55 [NON-UTF-8-BYTE-0xD6]й[NON-UTF-8-BYTE-0xFA][NON-UTF-8-BYTE-0xB1][NON-UTF-8-BYTE-0xEA]׼ʱ[NON-UTF-8-BYTE-0xBC][NON-UTF-8-BYTE-0xE4]</StartDateTime>
-		<StartTestTime>1761832536</StartTestTime>
+		<StartDateTime>Nov 03 23:39 [NON-UTF-8-BYTE-0xD6]й[NON-UTF-8-BYTE-0xFA][NON-UTF-8-BYTE-0xB1][NON-UTF-8-BYTE-0xEA]׼ʱ[NON-UTF-8-BYTE-0xBC][NON-UTF-8-BYTE-0xE4]</StartDateTime>
+		<StartTestTime>1762184388</StartTestTime>
 		<TestList>
 			<Test>./test/test_sun</Test>
 		</TestList>
@@ -37,7 +37,7 @@
 			<FullCommandLine>C:\vscode-workplace\c\opengl\build\test\Debug\test_sun.exe</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>6.20275</Value>
+					<Value>7.40288</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -52,12 +52,12 @@
 					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
 				</NamedMeasurement>
 				<Measurement>
-					<Value encoding="base64" compression="gzip">eJwLcw0KcY1QCPZwdHENUnD29w3w9HFVCA51dnYNDuZyC3J093X1C8ElDxUOCPJ3D3L0VfDx9POGy4XRzGQAOTswcQ==</Value>
+					<Value encoding="base64" compression="gzip">eJztzM0KgkAUBeC9T3FeILFokzuxyST/GE2CaGF6Y4RKccbMt88o2rUJ2rm7fOfckzKesB3itbVkHHboR67HEG9tm8WxtuKW47Mg+Za/OeKhwy0fnhtsPln6t+U+60xMFgbqUuXChDHKKKP8JLqua/tElBJ11ihUJyhBUCSHu1V1q9BlEg1dqhsVkOU1J5QKdM+JCvkqi4akqM7F83tqzOY49sOAftAeY8o9wQ==</Value>
 				</Measurement>
 			</Results>
 		</Test>
-		<EndDateTime>Oct 30 21:55 [NON-UTF-8-BYTE-0xD6]й[NON-UTF-8-BYTE-0xFA][NON-UTF-8-BYTE-0xB1][NON-UTF-8-BYTE-0xEA]׼ʱ[NON-UTF-8-BYTE-0xBC][NON-UTF-8-BYTE-0xE4]</EndDateTime>
-		<EndTestTime>1761832542</EndTestTime>
+		<EndDateTime>Nov 03 23:39 [NON-UTF-8-BYTE-0xD6]й[NON-UTF-8-BYTE-0xFA][NON-UTF-8-BYTE-0xB1][NON-UTF-8-BYTE-0xEA]׼ʱ[NON-UTF-8-BYTE-0xBC][NON-UTF-8-BYTE-0xE4]</EndDateTime>
+		<EndTestTime>1762184396</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>
