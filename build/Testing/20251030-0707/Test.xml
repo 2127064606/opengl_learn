@@ -25,8 +25,8 @@
 	ProcessorClockFrequency="2400"
 	>
 	<Testing>
-		<StartDateTime>Nov 03 23:39 [NON-UTF-8-BYTE-0xD6]й[NON-UTF-8-BYTE-0xFA][NON-UTF-8-BYTE-0xB1][NON-UTF-8-BYTE-0xEA]׼ʱ[NON-UTF-8-BYTE-0xBC][NON-UTF-8-BYTE-0xE4]</StartDateTime>
-		<StartTestTime>1762184388</StartTestTime>
+		<StartDateTime>Nov 07 23:26 [NON-UTF-8-BYTE-0xD6]й[NON-UTF-8-BYTE-0xFA][NON-UTF-8-BYTE-0xB1][NON-UTF-8-BYTE-0xEA]׼ʱ[NON-UTF-8-BYTE-0xBC][NON-UTF-8-BYTE-0xE4]</StartDateTime>
+		<StartTestTime>1762529174</StartTestTime>
 		<TestList>
 			<Test>./test/test_sun</Test>
 		</TestList>
@@ -37,7 +37,7 @@
 			<FullCommandLine>C:\vscode-workplace\c\opengl\build\test\Debug\test_sun.exe</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>7.40288</Value>
+					<Value>5.90592</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -52,12 +52,12 @@
 					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
 				</NamedMeasurement>
 				<Measurement>
-					<Value encoding="base64" compression="gzip">eJztzM0KgkAUBeC9T3FeILFokzuxyST/GE2CaGF6Y4RKccbMt88o2rUJ2rm7fOfckzKesB3itbVkHHboR67HEG9tm8WxtuKW47Mg+Za/OeKhwy0fnhtsPln6t+U+60xMFgbqUuXChDHKKKP8JLqua/tElBJ11ihUJyhBUCSHu1V1q9BlEg1dqhsVkOU1J5QKdM+JCvkqi4akqM7F83tqzOY49sOAftAeY8o9wQ==</Value>
+					<Value encoding="base64" compression="gzip">eJwrz0wpybBSMDc3U8hIzUzPKAGxTRTyipzzcwvy81LzSoqtFIy5QlIrSkqLUhVy8hNTUlMUEksUChJB+vT09IGoJLW4BEzEF6UW55cWJacW65cb6WUVpHOVQ8w3MzKAm29miG6+IRnmJ0HMD3MNCnGNUAj2cHRxDVJw9vcN8PRxVQgOdXZ2DQ7mcgtydPd19QvBJQ8VDgjydw9y9FXw8fTzhsvRzmQAwcVw8w==</Value>
 				</Measurement>
 			</Results>
 		</Test>
-		<EndDateTime>Nov 03 23:39 [NON-UTF-8-BYTE-0xD6]й[NON-UTF-8-BYTE-0xFA][NON-UTF-8-BYTE-0xB1][NON-UTF-8-BYTE-0xEA]׼ʱ[NON-UTF-8-BYTE-0xBC][NON-UTF-8-BYTE-0xE4]</EndDateTime>
-		<EndTestTime>1762184396</EndTestTime>
+		<EndDateTime>Nov 07 23:26 [NON-UTF-8-BYTE-0xD6]й[NON-UTF-8-BYTE-0xFA][NON-UTF-8-BYTE-0xB1][NON-UTF-8-BYTE-0xEA]׼ʱ[NON-UTF-8-BYTE-0xBC][NON-UTF-8-BYTE-0xE4]</EndDateTime>
+		<EndTestTime>1762529180</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>
