@@ -69,7 +69,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\glad\include;C:\glm-0.9.8.5\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\glad\include;C:\glm-0.9.8.5\glm;C:\assimp\3.3.1\assimp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -79,7 +79,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\glad\include;C:\glm-0.9.8.5\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\glad\include;C:\glm-0.9.8.5\glm;C:\assimp\3.3.1\assimp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -89,7 +89,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\glad\include;C:\glm-0.9.8.5\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\glad\include;C:\glm-0.9.8.5\glm;C:\assimp\3.3.1\assimp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -99,7 +99,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\glad\include;C:\glm-0.9.8.5\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\include;C:\glad\include;C:\glm-0.9.8.5\glm;C:\assimp\3.3.1\assimp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -182,6 +182,14 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{CA587E6F-164D-3B29-AE65-EAA48A32DC2A}</Project>
       <Name>opengl_demo</Name>
     </ProjectReference>
+    <ProjectReference Include="C:\vscode-workplace\c\opengl\build\test\test_assimp.vcxproj">
+      <Project>{E0F2FE18-1DE5-39C6-A174-6983A126E731}</Project>
+      <Name>test_assimp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vscode-workplace\c\opengl\build\test\test_assimp_before.vcxproj">
+      <Project>{79ABAAFA-03B8-3803-BC58-B92DA5411CB4}</Project>
+      <Name>test_assimp_before</Name>
+    </ProjectReference>
     <ProjectReference Include="C:\vscode-workplace\c\opengl\build\test\test_main.vcxproj">
       <Project>{BCFE151F-D367-339C-A610-C8865A5D5D63}</Project>
       <Name>test_main</Name>
@@ -189,6 +197,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="C:\vscode-workplace\c\opengl\build\test\test_sun.vcxproj">
       <Project>{5CCE82BD-7E6C-349D-B4FE-E45D6A13ED59}</Project>
       <Name>test_sun</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vscode-workplace\c\opengl\build\test\test_tools\test_tools.vcxproj">
+      <Project>{CD72759D-727E-3FD2-90C8-54279F08B12D}</Project>
+      <Name>test_tools</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

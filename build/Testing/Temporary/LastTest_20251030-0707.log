@@ -1,28 +1,22 @@
-Start testing: Nov 07 23:26 中国标准时间
+Start testing: Nov 13 20:36 中国标准时间
 ----------------------------------------------------------
-2/2 Testing: test_sun
-2/2 Test: test_sun
-Command: "C:/vscode-workplace/c/opengl/build/test/Debug/test_sun.exe"
+4/4 Testing: test_assimp_before
+4/4 Test: test_assimp_before
+Command: "C:/vscode-workplace/c/opengl/build/test/Debug/test_assimp_before.exe"
 Directory: C:/vscode-workplace/c/opengl/build/test
-"test_sun" start time: Nov 07 23:26 中国标准时间
+"test_assimp_before" start time: Nov 13 20:36 中国标准时间
 Output:
 ----------------------------------------------------------
-width: 776 height: 774 nrComponents: 3
-Texture loaded at path: ../../test/test_resources/w2.jpg
-width: 620 height: 614 nrComponents: 1
-Texture loaded at path: ../../test/test_resources/b2.jpg
-VERTEX SHADER COMPILE SUCCESS
-FRAGMENT SHADER COMPILE SUCCESS
-SHADER PROGRAM LINK SUCCESS
-VERTEX SHADER COMPILE SUCCESS
-FRAGMENT SHADER COMPILE SUCCESS
-SHADER PROGRAM LINK SUCCESS
+INFO: [Thu Nov 13 20:36:10 2025
+] ../../test/test_resources/backpack/diffuse.jpg
+INFO: [Thu Nov 13 20:36:10 2025
+] ../../test/test_resources/backpack/specular.jpg
 <end of output>
-Test time =   5.91 sec
+Test time =  27.49 sec
 ----------------------------------------------------------
 Test Passed.
-"test_sun" end time: Nov 07 23:26 中国标准时间
-"test_sun" time elapsed: 00:00:05
+"test_assimp_before" end time: Nov 13 20:36 中国标准时间
+"test_assimp_before" time elapsed: 00:00:27
 ----------------------------------------------------------
 
-End testing: Nov 07 23:26 中国标准时间
+End testing: Nov 13 20:36 中国标准时间

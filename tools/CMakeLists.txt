@@ -6,6 +6,10 @@ add_library(
     Camera.cpp
     stb_image.h
     stb_image.cpp
+    Mesh.hpp
+    Mesh.cpp
+    Model.hpp
+    Model.cpp
 )
 
 include_directories("C:/glad/include")

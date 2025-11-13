@@ -8,6 +8,12 @@
       <FullPath>C:\vscode-workplace\c\opengl\build\Debug\opengl_demo.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
+      <FullPath>C:\vscode-workplace\c\opengl\build\test\Debug\test_assimp.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\vscode-workplace\c\opengl\build\test\Debug\test_assimp_before.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
       <FullPath>C:\vscode-workplace\c\opengl\build\test\Debug\test_main.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>

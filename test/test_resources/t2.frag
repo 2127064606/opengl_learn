@@ -27,9 +27,9 @@ struct Light{
     // 衰减系数
     float constant;
     float linear;
-    float quadraric;
+    float quadratic;
 };
-uniform Light light;
+uniform Light light[4];
 
 //平行光
 struct ParallelLight{
@@ -68,7 +68,7 @@ vec3 calculatePointLightRes(Light light, vec3 norm, vec3 lightDir){
 
     //计算衰减系数
     float distance = length(light.position - FragPos);
-    float attenuation = 1.0 / (light.constant + light.linear * distance + light.quadraric * (distance * distance));
+    float attenuation = 1.0 / (light.constant + light.linear * distance + light.quadratic * (distance * distance));
     // 应用衰减系数
     amibent *= attenuation;
     diffuse *= attenuation;
@@ -116,9 +116,11 @@ vec3 calculateSpotLightRes(SpotLight spotLight, vec3 norm, vec3 spotLightDir){
 void main()
 {
     
-   vec3 res = vec3(0.0);
-   vec3 lightDir = normalize(light.position - FragPos);
-   res += calculatePointLightRes(light, outNormalPos, lightDir);
+   vec3 res = vec3(0.0); 
+   for(int i = 0; i < 4; i++){
+         vec3 lightDir = normalize(light[i].position - FragPos);
+       res += calculatePointLightRes(light[i], outNormalPos, lightDir);
+   }
    vec3 parallelLightDir = normalize(-parallelLight.direction);
    res += calculateParallelLightRes(parallelLight, outNormalPos, parallelLightDir);
    vec3 spotLightDir = normalize(spotLight.position - FragPos);

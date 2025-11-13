@@ -6,3 +6,4 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("tools")
 subdirs("test")
+subdirs("test/test_tools")

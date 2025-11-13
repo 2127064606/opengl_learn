@@ -3,7 +3,8 @@
 	[
 		"C:/vscode-workplace/c/opengl/build/cmake_install.cmake",
 		"C:/vscode-workplace/c/opengl/build/tools/cmake_install.cmake",
-		"C:/vscode-workplace/c/opengl/build/test/cmake_install.cmake"
+		"C:/vscode-workplace/c/opengl/build/test/cmake_install.cmake",
+		"C:/vscode-workplace/c/opengl/build/test/test_tools/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

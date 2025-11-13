@@ -10,6 +10,12 @@
     <ClCompile Include="C:\vscode-workplace\c\opengl\tools\stb_image.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\vscode-workplace\c\opengl\tools\Mesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\vscode-workplace\c\opengl\tools\Model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\vscode-workplace\c\opengl\tools\Shader.hpp">
@@ -19,6 +25,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\vscode-workplace\c\opengl\tools\stb_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\vscode-workplace\c\opengl\tools\Mesh.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\vscode-workplace\c\opengl\tools\Model.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -5,17 +5,22 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(GLAD_SRC C:/glad/src/)
+set(ASSIMP_3.3.1_ROOT "C:/assimp/3.3.1/assimp")
 # -------------------------- 手动指定GLFW路径 --------------------------
 # GLFW头文件路径（指向包含GLFW目录的上级）
 include_directories("C:/glfw-3.4.bin.WIN64/glfw-3.4.bin.WIN64/include")
 include_directories("C:/glad/include")
 include_directories("C:/glm-0.9.8.5/glm")
+include_directories(${ASSIMP_3.3.1_ROOT}/include)
 # GLFW库文件路径（指向存放.lib或.a的目录，根据实际子目录调整）
 # 例如：如果库在C:\glfw-3.4\glfw-3.4\lib-mingw-w64，则改为下面的路径
 link_directories("C:/glfw-3.4.bin.WIN64/glfw-3.4.bin.WIN64/lib-vc2022")  # 替换为你的库目录
+link_directories(${ASSIMP_3.3.1_ROOT}/lib/Debug)
+#link_directories(${ASSIMP_3.3.1_ROOT}/bin/Debug)
 add_subdirectory(tools)
 enable_testing(test)
 add_subdirectory(test)
+add_subdirectory(test/test_tools)
 # -------------------------- 其他库置（如GLAD、GLM） --------------------------
 # 如果GLAD也是手动放置的，类似指定路径（例如GLAD放在项目的vendor目录下）
 # include_directories("vendor/glad/include")  # 假设GLAD头文件路径
@@ -31,7 +36,10 @@ add_executable(${PROJECT_NAME} main.cpp ${GLAD_SRC}/glad.c)  # 若有GLAD源码�
 target_link_libraries(${PROJECT_NAME} PRIVATE
   glfw3  # 链接GLFW库（根据库文件名称调整，如libglfw3.a则写glfw3）
   ToolLib  # 链接Tool库
+ assimp-vc143-mtd
 )
+
+
 
 # 链接系统OpenGL库（Windows默认是opengl32.lib）
 if(WIN32)

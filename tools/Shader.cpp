@@ -29,6 +29,7 @@ Shader::Shader(const char* vertexPath, const char* fragmentPath){
     vertexShader = glCreateShader(GL_VERTEX_SHADER);
     fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
     const char* vertexSourcePtr = vertexSource.c_str();
+    std::cout<< vertexSourcePtr << std::endl;
     glShaderSource(vertexShader, 1, &vertexSourcePtr, NULL);
     glCompileShader(vertexShader);
     int success;
@@ -41,6 +42,7 @@ Shader::Shader(const char* vertexPath, const char* fragmentPath){
         std::cout << "VERTEX SHADER COMPILE SUCCESS" << std::endl;
     }
     const char* fragmentSourcePtr = fragmentSource.c_str();
+    std::cout<< fragmentSourcePtr << std::endl;
     glShaderSource(fragmentShader, 1, &fragmentSourcePtr, NULL);
     glCompileShader(fragmentShader);
     glGetShaderiv(fragmentShader, GL_COMPILE_STATUS, &success);

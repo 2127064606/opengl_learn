@@ -1,3 +1,5 @@
 test_main 44 5.05902
-test_sun 232 9.4899
+test_sun 239 9.6256
+test_assimp 40 23.3337
+test_assimp_before 83 6.15627
 ---

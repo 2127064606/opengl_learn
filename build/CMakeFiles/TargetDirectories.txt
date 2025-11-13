@@ -6,4 +6,8 @@ C:/vscode-workplace/c/opengl/build/tools/CMakeFiles/ToolLib.dir
 C:/vscode-workplace/c/opengl/build/tools/CMakeFiles/RUN_TESTS.dir
 C:/vscode-workplace/c/opengl/build/test/CMakeFiles/test_main.dir
 C:/vscode-workplace/c/opengl/build/test/CMakeFiles/test_sun.dir
+C:/vscode-workplace/c/opengl/build/test/CMakeFiles/test_assimp.dir
+C:/vscode-workplace/c/opengl/build/test/CMakeFiles/test_assimp_before.dir
 C:/vscode-workplace/c/opengl/build/test/CMakeFiles/RUN_TESTS.dir
+C:/vscode-workplace/c/opengl/build/test/test_tools/CMakeFiles/test_tools.dir
+C:/vscode-workplace/c/opengl/build/test/test_tools/CMakeFiles/RUN_TESTS.dir

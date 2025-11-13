@@ -223,6 +223,13 @@ int main()
         glm::vec3( 1.5f,  0.2f, -1.5f),
         glm::vec3(-1.3f,  1.0f, -1.5f)
     };
+
+    glm::vec3 lightPosArr[] ={
+          glm::vec3( 0.7f,  0.2f,  2.0f),
+        glm::vec3( 2.3f, -3.3f, -4.0f),
+        glm::vec3(-4.0f,  2.0f, -12.0f),
+        glm::vec3( 0.0f,  0.0f, -3.0f)
+    };
     glEnable(GL_DEPTH_TEST);
     while (!glfwWindowShouldClose(window))
     {
@@ -235,10 +242,10 @@ int main()
         glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         light_shader.use();
-        model = glm::mat4(1.0f);
-        model = glm::translate(model, lightPos);
-        model = glm::scale(model, glm::vec3(0.2f));
-        light_shader.setMat4("model", model);
+        // model = glm::mat4(1.0f);
+        // model = glm::translate(model, lightPos);
+        // model = glm::scale(model, glm::vec3(0.2f));
+        // light_shader.setMat4("model", model);
         view = camera.getViewMatrix();
         light_shader.setMat4("view", view);
         projection = glm::mat4(1.0f);
@@ -246,7 +253,14 @@ int main()
         light_shader.setMat4("projection", projection);
         light_shader.setVec3("lightColor", lightColor);
         glBindVertexArray(light_vao);
-        glDrawArrays(GL_TRIANGLES, 0, 36);
+        for(unsigned int i = 0; i < 4; i++){
+            model = glm::mat4(1.0f);
+            model = glm::translate(model, lightPosArr[i]);
+            model = glm::scale(model, glm::vec3(0.2f));
+            light_shader.setMat4("model", model);
+            glDrawArrays(GL_TRIANGLES, 0, 36);
+        }
+        //glDrawArrays(GL_TRIANGLES, 0, 36);
 
         shader.use();
        // view = camera.getViewMatrix();
@@ -270,13 +284,15 @@ int main()
         shader.setFloat("material.shininess", 64.0f);
        // glm::vec3 diffuseColor = lightColor * glm::vec3(1.0f);   // 降低影响
       // glm::vec3 ambientColor =  lightColor * glm::vec3(1.0f); // 很低的影响
-        shader.setVec3("light.ambient", glm::vec3(0.2f, 0.2f, 0.2f));
-        shader.setVec3("light.diffuse", glm::vec3(0.8f, 0.8f, 0.8f));
-        shader.setVec3("light.specular", glm::vec3(1.0f, 1.0f, 1.0f));
-        shader.setVec3("light.position", glm::vec3(1.2f, 1.0f, 2.0f));
-        shader.setFloat("light.constant", 1.0f);
-        shader.setFloat("light.linear", 0.09f);
-        shader.setFloat("light.quadraric", 0.032f);
+        for(unsigned int i = 0; i < 4; i++){
+            shader.setVec3("light[" + std::to_string(i) + "].ambient", glm::vec3(0.2f, 0.2f, 0.2f));
+             shader.setVec3("light.diffuse", glm::vec3(0.8f, 0.8f, 0.8f));
+            shader.setVec3("light.specular", glm::vec3(1.0f, 1.0f, 1.0f));
+        shader.setVec3("light[" + std::to_string(i) + "].position", lightPosArr[i]);
+         shader.setFloat("light[" + std::to_string(i) + "].constant", 1.0f);
+        shader.setFloat("light[" + std::to_string(i) + "].linear", 0.09f);
+        shader.setFloat("light[" + std::to_string(i) + "].quadratic", 0.032f);
+        }
         shader.setVec3("viewPos", camera.position);
         shader.setVec3("spotLight.position", camera.position);
         shader.setVec3("spotLight.direction",camera.front);

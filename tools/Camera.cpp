@@ -27,7 +27,7 @@ void Camera::processMouseMovement(float xoffset, float yoffset, bool constrainPi
     xoffset *= sensitivity;
     yoffset *= sensitivity;
     
-    yaw -= xoffset;
+    yaw += xoffset;
     pitch += yoffset;
     if(constrainPitch){
         if(pitch > 89.0f){
@@ -38,7 +38,6 @@ void Camera::processMouseMovement(float xoffset, float yoffset, bool constrainPi
         }
     }
     
-
     updateCameraVectors();
 }
 
@@ -57,6 +56,6 @@ void Camera::updateCameraVectors(){
     front.y = sin(glm::radians(pitch));
     front.z = sin(glm::radians(yaw)) * cos(glm::radians(pitch));
     front = glm::normalize(front);
-    right = glm::normalize(glm::cross(worldUp, front));
+    right = glm::normalize(glm::cross(front, worldUp));
     up = glm::normalize(glm::cross(right, front));
 }

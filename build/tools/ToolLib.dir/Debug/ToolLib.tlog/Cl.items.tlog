@@ -1,3 +1,5 @@
 C:\vscode-workplace\c\opengl\tools\Shader.cpp;C:\vscode-workplace\c\opengl\build\tools\ToolLib.dir\Debug\Shader.obj
 C:\vscode-workplace\c\opengl\tools\Camera.cpp;C:\vscode-workplace\c\opengl\build\tools\ToolLib.dir\Debug\Camera.obj
 C:\vscode-workplace\c\opengl\tools\stb_image.cpp;C:\vscode-workplace\c\opengl\build\tools\ToolLib.dir\Debug\stb_image.obj
+C:\vscode-workplace\c\opengl\tools\Mesh.cpp;C:\vscode-workplace\c\opengl\build\tools\ToolLib.dir\Debug\Mesh.obj
+C:\vscode-workplace\c\opengl\tools\Model.cpp;C:\vscode-workplace\c\opengl\build\tools\ToolLib.dir\Debug\Model.obj

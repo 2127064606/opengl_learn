@@ -19,25 +19,25 @@
 	ProcessorCacheSize="-1"
 	NumberOfLogicalCPU="16"
 	NumberOfPhysicalCPU="10"
-	TotalVirtualMemory="20685"
+	TotalVirtualMemory="23801"
 	TotalPhysicalMemory="16077"
 	LogicalProcessorsPerPhysical="1"
 	ProcessorClockFrequency="2400"
 	>
 	<Testing>
-		<StartDateTime>Nov 07 23:26 [NON-UTF-8-BYTE-0xD6]й[NON-UTF-8-BYTE-0xFA][NON-UTF-8-BYTE-0xB1][NON-UTF-8-BYTE-0xEA]׼ʱ[NON-UTF-8-BYTE-0xBC][NON-UTF-8-BYTE-0xE4]</StartDateTime>
-		<StartTestTime>1762529174</StartTestTime>
+		<StartDateTime>Nov 13 20:36 [NON-UTF-8-BYTE-0xD6]й[NON-UTF-8-BYTE-0xFA][NON-UTF-8-BYTE-0xB1][NON-UTF-8-BYTE-0xEA]׼ʱ[NON-UTF-8-BYTE-0xBC][NON-UTF-8-BYTE-0xE4]</StartDateTime>
+		<StartTestTime>1763037368</StartTestTime>
 		<TestList>
-			<Test>./test/test_sun</Test>
+			<Test>./test/test_assimp_before</Test>
 		</TestList>
 		<Test Status="passed">
-			<Name>test_sun</Name>
+			<Name>test_assimp_before</Name>
 			<Path>./test</Path>
-			<FullName>./test/test_sun</FullName>
-			<FullCommandLine>C:\vscode-workplace\c\opengl\build\test\Debug\test_sun.exe</FullCommandLine>
+			<FullName>./test/test_assimp_before</FullName>
+			<FullCommandLine>C:\vscode-workplace\c\opengl\build\test\Debug\test_assimp_before.exe</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>5.90592</Value>
+					<Value>27.494</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -46,18 +46,18 @@
 					<Value>Completed</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="text/string" name="Command Line">
-					<Value>C:\vscode-workplace\c\opengl\build\test\Debug\test_sun.exe</Value>
+					<Value>C:\vscode-workplace\c\opengl\build\test\Debug\test_assimp_before.exe</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="text/string" name="Environment">
 					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
 				</NamedMeasurement>
 				<Measurement>
-					<Value encoding="base64" compression="gzip">eJwrz0wpybBSMDc3U8hIzUzPKAGxTRTyipzzcwvy81LzSoqtFIy5QlIrSkqLUhVy8hNTUlMUEksUChJB+vT09IGoJLW4BEzEF6UW55cWJacW65cb6WUVpHOVQ8w3MzKAm29miG6+IRnmJ0HMD3MNCnGNUAj2cHRxDVJw9vcN8PRxVQgOdXZ2DQ7mcgtydPd19QvBJQ8VDgjydw9y9FXw8fTzhsvRzmQAwcVw8w==</Value>
+					<Value encoding="base64" compression="gzip">eJzz9HPzt1KIDskoVfDLL1MwNFYwMrAyNrMyNAAyjEy5YhX09PSBqCS1uARMxBelFueXFiWnFusnJSZnFwCxfkpmWlppcapeVkE6lyc1DCwuSE0uzUksApsIAGW0MoQ=</Value>
 				</Measurement>
 			</Results>
 		</Test>
-		<EndDateTime>Nov 07 23:26 [NON-UTF-8-BYTE-0xD6]й[NON-UTF-8-BYTE-0xFA][NON-UTF-8-BYTE-0xB1][NON-UTF-8-BYTE-0xEA]׼ʱ[NON-UTF-8-BYTE-0xBC][NON-UTF-8-BYTE-0xE4]</EndDateTime>
-		<EndTestTime>1762529180</EndTestTime>
+		<EndDateTime>Nov 13 20:36 [NON-UTF-8-BYTE-0xD6]й[NON-UTF-8-BYTE-0xFA][NON-UTF-8-BYTE-0xB1][NON-UTF-8-BYTE-0xEA]׼ʱ[NON-UTF-8-BYTE-0xBC][NON-UTF-8-BYTE-0xE4]</EndDateTime>
+		<EndTestTime>1763037396</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>
